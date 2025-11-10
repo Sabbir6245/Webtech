@@ -1,0 +1,88 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    background: #f4f7fb;
+    color: #333;
+    line-height: 1.6;
+}
+
+
+header {
+    text-align: center;
+    background: #1a73e8;
+    color: white;
+    padding: 30px 10px;
+    border-bottom: 4px solid #155ab6;
+}
+
+header h1 {
+    font-size: 1.8em;
+}
+
+header h2 {
+    font-weight: 400;
+    font-size: 1.2em;
+    margin-top: 5px;
+}
+
+header p {
+    font-size: 0.95em;
+    opacity: 0.9;
+}
+
+
+.profile-box {
+    background: white;
+    max-width: 400px;
+    margin: 40px auto;
+    padding: 25px;
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 16px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.profile-photo {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+    border: 3px solid #1a73e8;
+}
+
+
+.student-name {
+    font-size: 1.5em;
+    color: #1a73e8;
+    margin-bottom: 10px;
+}
+
+.student-info {
+    font-size: 0.95em;
+    margin-bottom: 5px;
+}
+
+.bio {
+    margin-top: 15px;
+    font-size: 0.95em;
+    color: #555;
+}
+
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #1a73e8;
+    color: white;
+    font-size: 0.9em;
+    margin-top: 40px;
+    border-top: 4px solid #155ab6;
+}
