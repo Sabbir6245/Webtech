@@ -1,0 +1,135 @@
+
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    margin: 40px auto;
+    padding: 0 20px;
+    max-width: 900px;
+    line-height: 1.7;
+    background: #f4f7fb;
+    color: #333;
+}
+
+
+article {
+    background: #fff;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    margin-bottom: 40px;
+    transition: transform .2s, box-shadow .2s;
+}
+
+article:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+}
+
+article h2 {
+    margin-bottom: 10px;
+    color: #1a3d7c;
+}
+
+
+.comment-wrapper {
+    margin-top: 20px;
+    padding: 20px;
+    background: #fdfdfd;
+    border-radius: 12px;
+    border: 1px solid #eaeaea;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+
+.comment-form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.comment-form input,
+.comment-form textarea {
+    width: 100%;
+    padding: 12px;
+    font-size: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    outline: none;
+    transition: border-color .2s, box-shadow .2s;
+}
+
+.comment-form input:focus,
+.comment-form textarea:focus {
+    border-color: #0066cc;
+    box-shadow: 0 0 6px rgba(0,102,204,0.25);
+}
+
+.comment-form textarea {
+    min-height: 100px;
+    resize: vertical;
+}
+
+
+.comment-form button {
+    background: linear-gradient(135deg, #007bff, #005fcc);
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background .2s, transform .1s;
+}
+
+.comment-form button:hover {
+    background: linear-gradient(135deg, #005fcc, #004999);
+}
+
+.comment-form button:active {
+    transform: scale(0.97);
+}
+
+
+.error-message {
+    color: #d00;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+
+.comment-list {
+    margin-top: 20px;
+}
+
+.comment-item {
+    background: #fafafa;
+    padding: 12px;
+    margin-bottom: 12px;
+    border-radius: 8px;
+    border: 1px solid #e1e1e1;
+    transition: box-shadow .2s;
+}
+
+.comment-item:hover {
+    box-shadow: 0 3px 8px rgba(0,0,0,0.08);
+}
+
+
+.stars span {
+    font-size: 26px;
+    cursor: pointer;
+    color: #ccc;
+    transition: color .2s, transform .2s;
+}
+
+.stars span:hover {
+    color: #ffcc00;
+    transform: scale(1.2);
+}
+
+
+.stats {
+    margin-bottom: 15px;
+    padding: 8px 0;
+    font-weight: 600;
+    color: #444;
+}
