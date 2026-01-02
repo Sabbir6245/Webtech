@@ -9,7 +9,7 @@ if (!$isLoggedIn) {
 
 $email = $_SESSION["email"] ?? "";
 
-// DB connection
+
 $db_host = "localhost";
 $db_user = "root";
 $db_password = "";
@@ -20,7 +20,7 @@ if ($conn->connect_error) {
     die("Database connection failed: " . $conn->connect_error);
 }
 
-// Fetch users
+
 $userResult = $conn->query("SELECT id, username, email, role, status, created_at FROM users");
 $users = [];
 $counts = ['total'=>0, 'active'=>0, 'blocked'=>0];
@@ -36,7 +36,7 @@ if ($userResult->num_rows > 0) {
     }
 }
 
-// Fetch events
+
 $eventResult = $conn->query("
     SELECT e.id, e.title, e.event_date, e.venue, u.username AS organiser
     FROM events e
@@ -134,3 +134,4 @@ $conn->close();
 
 </body>
 </html>
+
