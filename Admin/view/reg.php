@@ -93,7 +93,7 @@ unset($_SESSION["previousValues"]);
 
 <div class="form-container">
     <h2>Register</h2>
-    <form method="post" action="../../controller/regauth.php">
+  <form method="post" action="MYPROJ/Admin/controller/regauth.php">
 
         <label>Username
             <input type="text" name="username" value="<?php echo $previousValues['username'] ?? ''; ?>">
@@ -138,3 +138,4 @@ unset($_SESSION["previousValues"]);
 
 </body>
 </html>
+
