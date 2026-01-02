@@ -5,7 +5,7 @@ include "../model/DatabaseConnection.php";
 error_reporting(E_ALL);
 ini_set('display_errors', 1);
 
-// POST data
+
 $username = $_POST['username'] ?? '';
 $password = $_POST['password'] ?? '';
 $email    = $_POST['email'] ?? '';
@@ -13,7 +13,7 @@ $phone    = $_POST['phone'] ?? '';
 $address  = $_POST['address'] ?? '';
 $role     = $_POST['role'] ?? '';
 
-// Validation
+
 $errors = [];
 $values = compact('username','email','phone','address','role');
 
@@ -36,10 +36,10 @@ if(count($errors) > 0){
     exit;
 }
 
-// Hash password
+
 $password_hashed = password_hash($password, PASSWORD_DEFAULT);
 
-// DB insert
+
 $db = new DatabaseConnection();
 $conn = $db->openConnection();
 
@@ -55,3 +55,4 @@ if($result){
     exit;
 }
 ?>
+
